@@ -1,9 +1,73 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Sevillana&display=swap');
+
+body {
     margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    background: rgb(179, 208, 155);
+    background: -moz-linear-gradient(52deg, rgba(179, 208, 155, 1) 0%, rgba(87, 96, 85, 1) 48%);
+    background: -webkit-linear-gradient(52deg, rgba(179, 208, 155, 1) 0%, rgba(87, 96, 85, 1) 48%);
+    background: linear-gradient(52deg, rgba(179, 208, 155, 1) 0%, rgba(87, 96, 85, 1) 48%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3d09b", endColorstr="#576055", GradientType=1);
 }
-.container{
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 5px 5px 5px rgba(25, 25, 25, 0.2),
+        -5px -5px 5px rgb(243, 243, 243, 0.2);
+    padding: 20px 30px;
+    margin: 10px;
+    color: white;
     text-align: center;
+    width: 500px;
 }
-input{
-    margin-bottom: 5px;
+
+.box {
+    font-size: large;
+}
+
+.input {
+    transform: translate(-12px, 0px);
+    background-color: #212121;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 10px 0px;
+    color: white;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.8em 2em;
+    background-color: #212121;
+    border: 3px solid white;
+    border-radius: 1em;
+    color: #fff;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: -5px 5px 0px 0px white;
+    margin-top: 15px;
+}
+
+button:hover {
+    transform: translate(5px, -5px);
 }

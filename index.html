@@ -11,33 +11,33 @@
 
 <body>
     <div class="container">
-        <div>
+        <div class="card">
             <h1>Add Your Win Rate Game</h1>
+            <form class="box">
+                <div>
+                    <label for="match">Match Totals</label>
+                </div>
+                <div>
+                    <input class="input" id="match" name="match" type="number" placeholder="300">
+                </div>
+                <div>
+                    <label for="wr">Current Win Rate</label>
+                </div>
+                <div>
+                    <input class="input" id="wr" name="mr" type="number" placeholder="80%">
+                </div>
+                <div>
+                    <label for="req">Win Rate Request</label>
+                </div>
+                <div>
+                    <input class="input" id="req" name="req" type="number" placeholder="90%">
+                </div>
+                <span id="result"></span>
+                <div>
+                    <button id="count" type="button">Count</button>
+                </div>
+            </form>
         </div>
-        <form>
-            <div>
-                <label for="match">Match Totals</label>
-            </div>
-            <div>
-                <input id="match" name="match" type="number" placeholder="300">
-            </div>
-            <div>
-                <label for="wr">Current Win Rate</label>
-            </div>
-            <div>
-                <input id="wr" name="mr" type="number" placeholder="80%">
-            </div>
-            <div>
-                <label for="req">Win Rate Request</label>
-            </div>
-            <div>
-                <input id="req" name="req" type="number" placeholder="90%">
-            </div>
-            <span id="result"></span>
-            <div>
-                <button id="count" type="button">Count</button>
-            </div>
-        </form>
     </div>
 
     <script src="assets/js/script.js"></script>
