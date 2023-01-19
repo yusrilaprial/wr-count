@@ -71,3 +71,13 @@ button {
 button:hover {
     transform: translate(5px, -5px);
 }
+
+img{
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    margin-top: 60px;
+    width: 30px;
+}
+
+img:hover{
+    transform: translate(0px, -2px);
+}
